@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem;
+            background-color: #4CAF50;
+            color: #fff;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #4CAF50;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        code {
+            background-color: #eee;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+
+        /* Pie de página */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #223022;
+            color: #fff;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Formularios en HTML</h1>
+        <p>Una guía rápida sobre los elementos básicos de los formularios en HTML</p>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección: Etiqueta Form -->
+        <section id="form">
+            <h2>1. Etiqueta &lt;form&gt;</h2>
+            <p>La etiqueta <code>&lt;form&gt;</code> es el contenedor principal de un formulario en HTML. Utiliza
+                atributos como <code>action</code> para especificar la URL donde se enviarán los datos y
+                <code>method</code> para definir el método de envío, como <code>POST</code> o <code>GET</code>.
+            </p>
+            <p>Ejemplo: <code>&lt;form action="procesar.php" method="POST"&gt;...&lt;/form&gt;</code></p>
+        </section>
+
+        <!-- Sección: Campos de Entrada -->
+        <section id="input">
+            <h2>2. Campos de Entrada (&lt;input&gt;)</h2>
+            <p>La etiqueta <code>&lt;input&gt;</code> se usa para capturar diferentes tipos de datos de los usuarios. El
+                tipo de dato se define con el atributo <code>type</code>, que puede ser <code>text</code>,
+                <code>email</code>, <code>password</code>, etc.
+            </p>
+            <p>Ejemplo: <code>&lt;input type="text" name="nombre" placeholder="Ingresa tu nombre"&gt;</code></p>
+        </section>
+
+        <!-- Sección: Etiqueta Textarea -->
+        <section id="textarea">
+            <h2>3. Área de Texto (&lt;textarea&gt;)</h2>
+            <p>La etiqueta <code>&lt;textarea&gt;</code> se utiliza para campos de texto largos, como comentarios o
+                descripciones. A diferencia de <code>&lt;input&gt;</code>, tiene etiquetas de apertura y cierre.</p>
+            <p>Ejemplo: <code>&lt;textarea name="comentarios" rows="4" cols="50"&gt;&lt;/textarea&gt;</code></p>
+        </section>
+
+        <!-- Sección: Etiqueta Select y Option -->
+        <section id="select">
+            <h2>4. Lista Desplegable (&lt;select&gt; y &lt;option&gt;)</h2>
+            <p>La etiqueta <code>&lt;select&gt;</code> crea una lista desplegable, y cada opción se define con la
+                etiqueta <code>&lt;option&gt;</code>.</p>
+            <p>Ejemplo:</p>
+            <pre>
+                <code>
+&lt;select name="pais"&gt;
+    &lt;option value="mx"&gt;México&lt;/option&gt;
+    &lt;option value="us"&gt;Estados Unidos&lt;/option&gt;
+&lt;/select&gt;
+                </code>
+            </pre>
+        </section>
+
+        <!-- Sección: Botón de Envío -->
+        <section id="submit">
+            <h2>5. Botón de Envío (&lt;button&gt; o &lt;input type="submit"&gt;)</h2>
+            <p>El botón de envío se utiliza para enviar los datos del formulario. Puedes crearlo con la etiqueta
+                <code>&lt;button&gt;</code> o con <code>&lt;input type="submit"&gt;</code>.
+            </p>
+            <p>Ejemplo: <code>&lt;button type="submit"&gt;Enviar&lt;/button&gt;</code></p>
+        </section>
+        <!-- Sección:Capturar Datos del Formulario -->
+        <section id="Captura-datos">
+            <h2>6. Captura de Datos con JavaScript</h2>
+            <p>Con JavaScript, podemos capturar y mostrar los valores ingresados por el usuario en un formulario.
+                Utilizamos el método <code>document.getElementById()</code> para obtener un elemento por su ID y el
+                método <code>document.querySelector()</code> para seleccionar elementos basados en selectores CSS.</p>
+
+            <p>Ejemplo:</p>
+            <code>
+        var nombre = document.getElementById('nombre').value; <br>
+        document.getElementById('mostrarNombre').textContent = nombre; <br>
+        var edad = document.querySelector('input[name="edad"]:checked').value;
+    </code>
+
+            <p>En este código:</p>
+            <ul>
+                <li><code>querySelector('input[name="edad"]:checked')</code> selecciona la opción marcada dentro de un
+                    grupo de radio buttons con el nombre <code>edad</code>, capturando así el valor de la edad
+                    seleccionada.</li>
+            </ul>
+        </section>
+        <h2>Ejemplo completo de formulario</h2>
+        <a target="_blank" href="formulario.html">Ejemplo de formulario</a>
+    </main>
+    <!-- Pie de página -->
+    <footer>
+        <h2>Contacto</h2>
+        <p>&copy; Fernanda Valeria Torres Reyna L21520449@chilpancingo.tecnm.mx</p>
+    </footer>
+</body>
+
+</html>

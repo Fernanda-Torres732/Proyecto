@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a Video y Audio en HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem;
+            background-color: #4CAF50;
+            color: #fff;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #4CAF50;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        code {
+            background-color: #eee;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+
+        /* Pie de página */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #223022;
+            color: #fff;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Video y Audio en HTML</h1>
+        <p>Una introducción a las etiquetas de video y audio en HTML</p>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección: Etiqueta Video -->
+        <section id="video">
+            <h2>1. Etiqueta &lt;video&gt;</h2>
+            <p>La etiqueta <code>&lt;video&gt;</code> se utiliza para insertar un video en HTML. Se puede controlar con
+                atributos como <code>controls</code> para mostrar controles de reproducción, <code>autoplay</code> para
+                iniciar automáticamente, y <code>loop</code> para repetir el video.</p>
+            <p>Ejemplo básico:</p>
+            <pre><code>&lt;video src="ruta_del_video.mp4" controls&gt;&lt;/video&gt;</code></pre>
+        </section>
+
+        <!-- Sección: Etiqueta Audio -->
+        <section id="audio">
+            <h2>2. Etiqueta &lt;audio&gt;</h2>
+            <p>La etiqueta <code>&lt;audio&gt;</code> permite insertar archivos de audio. Al igual que la etiqueta de
+                video, se pueden agregar controles de reproducción con <code>controls</code>, o establecer el audio para
+                reproducirse automáticamente con <code>autoplay</code>.</p>
+            <p>Ejemplo básico:</p>
+            <pre><code>&lt;audio src="ruta_del_audio.mp3" controls&gt;&lt;/audio&gt;</code></pre>
+        </section>
+
+        <!-- Sección: Formatos de Video -->
+        <section id="video-formatos">
+            <h2>3. Formatos de Video</h2>
+            <p>Los videos en HTML pueden estar en formatos como MP4, WebM y Ogg, aunque MP4 es el formato más
+                compatible.</p>
+            <p>Ejemplo con varios formatos:</p>
+            <pre><code>
+&lt;video controls&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+    &lt;source src="video.webm" type="video/webm"&gt;
+    Tu navegador no soporta video en HTML.
+&lt;/video&gt;
+            </code></pre>
+        </section>
+
+        <!-- Sección: Formatos de Audio -->
+        <section id="audio-formatos">
+            <h2>4. Formatos de Audio</h2>
+            <p>Los archivos de audio pueden estar en formatos como MP3, WAV y Ogg, siendo MP3 el más ampliamente
+                soportado.</p>
+            <p>Ejemplo con varios formatos:</p>
+            <pre><code>
+&lt;audio controls&gt;
+    &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+    &lt;source src="audio.ogg" type="audio/ogg"&gt;
+    Tu navegador no soporta audio en HTML.
+&lt;/audio&gt;
+            </code></pre>
+        </section>
+        <!-- Sección: Formatos de Audio -->
+        <section id="audio-formatos">
+            <h2>Ejemplos de audio y video</h2>
+            <audio controls>
+                <source src="https://pixabay.com/es/sound-effects/" type="audio/ogg">
+                <source src="https://pixabay.com/es/sound-effects/" type="audio/mpeg">
+            
+              </audio>
+              <video width="300" height="150" controls muted loop>
+                <source src="https://www.youtube.com/results?search_query=leon" type="video/mp4" />
+                
+                <code>video</code>.
+              </video>
+        </section>        
+    </main>
+</body>
+
+</html>

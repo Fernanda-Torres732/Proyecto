@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem;
+            background-color: #4CAF50;
+            color: #fff;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #4CAF50;
+            margin-bottom: 0.5rem;
+        }
+
+        h2.exclusivo {
+            color: initial;
+            font-size: initial;
+            margin-bottom: initial;
+        }
+
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        code {
+            background-color: #eee;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+
+        /* Pie de página */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #223022;
+            color: #fff;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Etiquetas HTML Comunes</h1>
+        <p>Una guía breve sobre las etiquetas básicas de HTML</p>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección: Encabezados -->
+        <section id="encabezados">
+            <h2>1. Etiqueta de Encabezado (&lt;h1&gt; - &lt;h6&gt;)</h2>
+            <p>Las etiquetas de encabezado, de <code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code>, definen los niveles de
+                encabezados en la página. <code>&lt;h1&gt;</code> es el encabezado más importante, mientras que
+                <code>&lt;h6&gt;</code> es el menos importante.
+                Ejemplos:
+            </p>
+            <h1>primer heading</h1>
+            <h2 class="exclusivo">segundo heading</h2>
+            <h3>tercer heading</h3>
+            <h4>cuarto heading</h4>
+            <h5>quinto heading</h5>
+            <h6>sexto heading</h6>
+
+        </section>
+
+        <!-- Sección: Párrafo -->
+        <section id="parrafo">
+            <h2>2. Etiqueta de Párrafo (&lt;p&gt;)</h2>
+            <p>La etiqueta <code>&lt;p&gt;</code> se usa para definir párrafos de texto en la página. Permite separar
+                bloques de contenido para que el texto sea más fácil de leer. Este mismo parrafo es el ejemplo</p>
+        </section>
+
+        <!-- Sección: Enlace -->
+        <section id="enlace">
+            <h2>3. Etiqueta de Enlace (&lt;a&gt;)</h2>
+            <p>La etiqueta <code>&lt;a&gt;</code> crea enlaces a otras páginas o secciones de la misma página.
+                Usualmente se combina con el atributo <code>href</code> para definir la URL del enlace.</p>
+            <p>Ejemplo: <a target="_blank" href="index.html">Pagina principal</a></p>
+
+        </section>
+
+        <!-- Sección: Imagen -->
+        <section id="imagen">
+            <h2>4. Etiqueta de Imagen (&lt;img&gt;)</h2>
+            <p>La etiqueta <code>&lt;img&gt;</code> se usa para insertar imágenes en una página. Requiere al menos el
+                atributo <code>src</code> para indicar la URL de la imagen y el atributo <code>alt</code> para
+                describirla.</p>
+            <p>Ejemplo: <img src="https://www.google.com/imgres?q=gato&imgurl=https%3A%2F%2Fstatic.eldiario.es%2Fclip%2Fab74aa95-3656-424c-8ca1-dce590aabb97_16-9-discover-aspect-ratio_default_0.jpg&imgrefurl=https%3A%2F%2Fwww.eldiario.es%2Fconsumoclaro%2Fcomo-se-que-mi-gato-se-aburre_1_10033712.html&docid=3Tn7EbnE3t9AMM&tbnid=WfSnVO48pd-0QM&vet=12ahUKEwiruK7jm4GJAxWQHEQIHYv8JzEQM3oECG0QAA..i&w=1200&h=675&hcb=2&ved=2ahUKEwiruK7jm4GJAxWQHEQIHYv8JzEQM3oECG0QAA" width="400" height="200" /></p>
+        </section>
+
+        <!-- Sección: Lista -->
+        <section id="lista">
+            <h2>5. Etiquetas de Listas (&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;)</h2>
+            <p>Las listas no ordenadas <code>&lt;ul&gt;</code> y ordenadas <code>&lt;ol&gt;</code> se utilizan para
+                crear listas de elementos. Cada elemento de la lista se define con <code>&lt;li&gt;</code>.</p>
+            <p>Ejemplo de lista no ordenada:</p>
+            <pre>
+                <code>
+&lt;ul&gt;
+    &lt;li&gt;Elemento 1&lt;/li&gt;
+    &lt;li&gt;Elemento 2&lt;/li&gt;
+&lt;/ul&gt;
+                </code>
+            </pre>
+        </section>
+    </main>
+    <!-- Pie de página -->
+    <footer>
+        <h2>Contacto</h2>
+        <p>&copy; Fernanda Valeria Torres Reyna L21520449@chilpancingo.tecnm.mx</p>
+    </footer>
+</body>
+
+</html>

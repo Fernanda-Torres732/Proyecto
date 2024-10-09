@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado de Autos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #ffcc00;
+            padding: 10px;
+            text-align: center;
+            font-size: 24px;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+        }
+        table {
+            width: 40%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #ffcc00;
+            color: #333;
+        }
+        img {
+            width: 200px;
+            height: 150px;
+            border-radius: 5px;
+        }
+        .price {
+            color: green;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .btn {
+            background-color: #ffcc00;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        Mercado de Autos
+    </div>
+    <div class="container">
+        <!-- Tabla de Autos -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Imagen</th>
+                    <th>Detalles</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img id="car1-img" src="img/carro.jpeg" alt="Auto 1"></td>
+                    <td>
+                        <h3>Auto 1</h3>
+                        <p>Modelo: 2023</p>
+                        <p>Color: <span id="car1-color">Rojo</span></p>
+                        <p class="price">$200,000 MXN</p>
+                        <button class="btn" onclick="changeColor('car1-img', 'car1-color', 'img/carro.jpeg', 'Rojo')">Rojo</button>
+                        <button class="btn" onclick="changeColor('car1-img', 'car1-color', 'img/carroazul.jpg', 'Azul')">Azul</button>
+                        <button class="btn" onclick="changeColor('car1-img', 'car1-color', 'img/carrogris.jpg', 'Negro')">Gris</button>
+                        <button class="btn">Ver más</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img id="car2-img" src="img/carro2.jpeg" alt="Auto 2"></td>
+                    <td>
+                        <h3>Auto 2</h3>
+                        <p>Modelo: 2021</p>
+                        <p>Color: <span id="car2-color">Azul</span></p>
+                        <p class="price">$150,000 MXN</p>
+                        <button class="btn" onclick="changeColor('car2-img', 'car2-color', 'img/carro2.jpeg', 'Gris')">Gris</button>
+                        <button class="btn" onclick="changeColor('car2-img', 'car2-color', 'img/carro2rojo.jpg', 'Rojo')">Rojo</button>
+                        <button class="btn" onclick="changeColor('car2-img', 'car2-color', 'img/carro2gris.jpg', 'Gris oscuro')">Gris oscuro</button>
+                        <button class="btn">Ver más</button>
+                    </td>
+                </tr>
+                <!-- Agrega más filas para otros autos -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        function changeColor(imgId, colorId, imgSrc, color) {
+            document.getElementById(imgId).src = imgSrc;
+            document.getElementById(colorId).textContent = color;
+        }
+    </script>
+</body>
+</html>

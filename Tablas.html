@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem;
+            background-color: #4CAF50;
+            color: #fff;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #4CAF50;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        code {
+            background-color: #eee;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid rgb(8, 8, 8);
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #005f73;
+        }
+
+        /* Pie de página */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #223022;
+            color: #fff;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Tablas en HTML</h1>
+        <p>Una introducción básica a las tablas en HTML y sus etiquetas principales</p>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección: Etiqueta Table -->
+        <section id="table">
+            <h2>1. Etiqueta &lt;table&gt;</h2>
+            <p>La etiqueta <code>&lt;table&gt;</code> es el contenedor principal para crear una tabla en HTML. Dentro de
+                esta etiqueta, se colocan las filas y celdas de la tabla.</p>
+            <p>Ejemplo básico: <code>&lt;table&gt;...&lt;/table&gt;</code></p>
+        </section>
+
+        <!-- Sección: Filas (tr) -->
+        <section id="tr">
+            <h2>2. Filas de la Tabla (&lt;tr&gt;)</h2>
+            <p>La etiqueta <code>&lt;tr&gt;</code> se usa para definir una fila en la tabla. Cada fila contiene una
+                serie de celdas de datos o encabezados.</p>
+            <p>Ejemplo: <code>&lt;tr&gt;...&lt;/tr&gt;</code></p>
+        </section>
+
+        <!-- Sección: Encabezado de Columna (th) -->
+        <section id="th">
+            <h2>3. Encabezado de Columna (&lt;th&gt;)</h2>
+            <p>La etiqueta <code>&lt;th&gt;</code> se utiliza dentro de una fila (<code>&lt;tr&gt;</code>) para definir
+                una celda de encabezado de columna. Estas celdas suelen aparecer en negrita para indicar que son títulos
+                de cada columna.</p>
+            <p>Ejemplo: <code>&lt;th&gt;Nombre&lt;/th&gt;</code></p>
+        </section>
+
+        <!-- Sección: Celdas de Datos (td) -->
+        <section id="td">
+            <h2>4. Celdas de Datos (&lt;td&gt;)</h2>
+            <p>La etiqueta <code>&lt;td&gt;</code> define una celda de datos dentro de una fila
+                (<code>&lt;tr&gt;</code>). Esta etiqueta se usa para cada dato que se quiera mostrar en la tabla.</p>
+            <p>Ejemplo: <code>&lt;td&gt;Juan&lt;/td&gt;</code></p>
+        </section>
+
+        <!-- Sección: Ejemplo Completo -->
+        <section id="example">
+            <h2>5. Ejemplo Completo</h2>
+
+            <pre>
+                <table>
+                    <tr>
+                        <th>Etiqueta</th>
+                        <th>Tipo</th>
+                        <th>Qué es</th>
+                    </tr>
+                    <tr>
+                        <td>&lt;!DOCTYPE html&gt;</td>
+                        <td>Declaración de tipo de documento</td>
+                        <td>Define el tipo de documento como HTML5.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;html&gt;</td>
+                        <td>Contenedor</td>
+                        <td>Elemento raíz que contiene todo el contenido de la página.</td>
+                    </tr>
+                </table>    
+            </pre>
+        </section>
+    </main>
+    <!-- Pie de página -->
+    <footer>
+        <h2>Contacto</h2>
+        <p>&copy; Fernanda Valeria Torres Reyna L21520449@chilpancingo.tecnm.mx</p>
+    </footer>
+</body>
+
+</html>

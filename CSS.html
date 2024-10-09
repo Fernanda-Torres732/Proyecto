@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a CSS</title>
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem;
+            background-color: #4CAF50;
+            color: #fff;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #4CAF50;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        code {
+            background-color: #eee;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+
+        pre {
+            background-color: #f9f9f9;
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Introducción a CSS</h1>
+        <p>Guía básica sobre cómo estilizar elementos en HTML utilizando CSS</p>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección: ¿Qué es CSS? -->
+        <section id="que-es-css">
+            <h2>1. ¿Qué es CSS?</h2>
+            <p>CSS (Cascading Style Sheets) es un lenguaje de diseño utilizado para describir la presentación de documentos HTML. Nos permite controlar el color, las fuentes, los márgenes, el espaciado, la distribución y muchos otros aspectos visuales de los elementos en una página web.</p>
+        </section>
+
+        <!-- Sección: Sintaxis de CSS -->
+        <section id="sintaxis-css">
+            <h2>2. Sintaxis de CSS</h2>
+            <p>La sintaxis de CSS consta de selectores y declaraciones. Un selector apunta al elemento HTML que queremos estilizar, y una declaración especifica el estilo que aplicaremos a dicho elemento.</p>
+            <p>Ejemplo de una regla CSS:</p>
+            <pre><code>selector {
+    propiedad: valor;
+}</code></pre>
+            <p>Por ejemplo, para cambiar el color del texto de todos los párrafos:</p>
+            <pre><code>p {
+    color: blue;
+}</code></pre>
+        </section>
+
+        <!-- Sección: Formas de aplicar CSS -->
+        <section id="formas-aplicar-css">
+            <h2>3. Formas de aplicar CSS</h2>
+            <p>Existen tres formas principales de aplicar CSS:</p>
+            <ul>
+                <li><strong>CSS en línea:</strong> usando el atributo <code>style</code> dentro de una etiqueta HTML. Ejemplo: <code>&lt;p style="color: red;"&gt;Texto rojo&lt;/p&gt;</code></li>
+                <li><strong>CSS interno:</strong> en la sección <code>&lt;style&gt;</code> del documento HTML.</li>
+                <li><strong>CSS externo:</strong> en un archivo separado con extensión <code>.css</code> que luego enlazamos en el HTML.</li>
+            </ul>
+        </section>
+
+        <!-- Sección: Selectores básicos de CSS -->
+        <section id="selectores-basicos">
+            <h2>4. Selectores Básicos de CSS</h2>
+            <p>Los selectores de CSS nos permiten seleccionar y estilizar elementos específicos en HTML. Algunos selectores básicos son:</p>
+            <ul>
+                <li><strong>Selector de etiqueta:</strong> selecciona todos los elementos de una etiqueta específica. Ejemplo: <code>p { color: blue; }</code></li>
+                <li><strong>Selector de clase:</strong> selecciona elementos con una clase específica, usando el símbolo <code>.</code>. Ejemplo: <code>.miClase { font-size: 20px; }</code></li>
+                <li><strong>Selector de ID:</strong> selecciona un elemento con un ID específico, usando el símbolo <code>#</code>. Ejemplo: <code>#miID { background-color: yellow; }</code></li>
+            </ul>
+        </section>
+
+        <!-- Sección: Propiedades Comunes de CSS -->
+        <section id="propiedades-comunes">
+            <h2>5. Propiedades Comunes de CSS</h2>
+            <p>Algunas propiedades de CSS comúnmente utilizadas incluyen:</p>
+            <ul>
+                <li><strong>color:</strong> establece el color del texto. Ejemplo: <code>color: red;</code></li>
+                <li><strong>background-color:</strong> define el color de fondo. Ejemplo: <code>background-color: blue;</code></li>
+                <li><strong>font-size:</strong> ajusta el tamaño del texto. Ejemplo: <code>font-size: 18px;</code></li>
+                <li><strong>margin:</strong> controla el espacio exterior de un elemento. Ejemplo: <code>margin: 10px;</code></li>
+                <li><strong>padding:</strong> controla el espacio interior de un elemento. Ejemplo: <code>padding: 10px;</code></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
